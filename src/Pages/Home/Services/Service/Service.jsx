@@ -3,7 +3,7 @@ import serviceImg from "../../../../../public/assets/images/service.png"
 
 const Service = ({ service }) => {
   return (
-    <div className="bg-white p-4 rounded-2xl shadow-md hover:bg-[#CAEB66] transition-colors duration-300 text-center">
+    <div  data-aos="flip-right" data-aos-delay="1000" className="bg-white p-4 rounded-2xl shadow-md hover:bg-[#CAEB66] transition-colors duration-300 text-center">
       <div className="mb-4">
         <img
           src={serviceImg}

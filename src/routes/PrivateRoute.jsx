@@ -1,0 +1,21 @@
+import React from 'react';
+import useAuth from '../hooks/useAuth';
+import { Navigate } from 'react-router';
+
+const PrivateRoute = () => {
+    const {user, loading} = useAuth()
+    if(loading){
+        return<span className="loading loading-dots loading-xs"></span>
+
+    }
+    if(!user){
+        <Navigate to="/login"}></Navigate>
+    }
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default PrivateRoute;

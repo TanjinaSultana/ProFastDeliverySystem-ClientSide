@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ShowCaseCard from "./ShowCaseCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Import images
 import liveTrackingImg from "../../../../public/assets/images/live-tracking.png";
@@ -29,7 +31,7 @@ const showCases = [
 
 const ShowCase = () => {
   return (
-    <div className="flex flex-col max-w-4xl mx-auto gap-6 py-12">
+    <div data-aos="fade-right" data-aos-delay="500" className="flex flex-col max-w-4xl mx-auto gap-6 py-12">
         <div class="border-t-1 border-dashed border-[#03464D]  mb-16"></div>
       {showCases.map((item, index) => (
         <ShowCaseCard
