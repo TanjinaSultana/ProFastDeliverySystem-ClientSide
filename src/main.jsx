@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
   <AuthProvider>
 
   <StrictMode>
-     <div className="bg-gray-300 min-h-screen">
+     <div className="min-h-screen">
       <div className="font-urbanist max-w-5xl mx-auto">
         <RouterProvider router={router} />
       </div>

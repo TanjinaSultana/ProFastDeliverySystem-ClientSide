@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+@import "leaflet/dist/leaflet.css";
 
-.root{
-  background-color: grey;
-}
+
 
 .font-urbanist {
   font-family: "Urbanist", sans-serif;
@@ -12,3 +11,10 @@
   font-weight: 400;
   font-style: normal;
 }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(235, 233, 233);
+}
+

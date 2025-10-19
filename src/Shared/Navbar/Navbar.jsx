@@ -5,6 +5,8 @@ import TrackFast from '../../Logo/TrackFast';
 const Navbar = () => {
     const navItems = <>
     <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/sendParcel'>Send A Parcel</NavLink></li>
+    <li><NavLink to='/coverage'>Coverage</NavLink></li>
     <li><NavLink to='/about'>About</NavLink></li>
     </>
     return (
@@ -20,9 +22,10 @@ const Navbar = () => {
         {navItems}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">
-      <TrackFast></TrackFast>
-    </a>
+   <div className="btn btn-ghost text-xl">
+  <TrackFast />
+</div>
+
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

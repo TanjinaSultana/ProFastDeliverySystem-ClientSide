@@ -4,6 +4,9 @@ import Home from "../Pages/Home/Home/Home";
 import AuthLayout from "../Layout/AuthLayout";
 import Login from "../Pages/Authentication/Login/Login";
 import Register from "../Pages/Authentication/Register/Register";
+import Coverage from "../Pages/Coverage/Coverage/Coverage";
+import SendParcel from "../Pages/SendParcel/SendParcel";
+import PrivateRoute from "../routes/PrivateRoute";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -12,6 +15,16 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component:Home
+      },
+      {
+        path: "coverage",
+        Component:Coverage,
+        loader: ()=> fetch("/assets/ServiceCenter.json")
+      },
+      {
+        path: "sendParcel",
+        element:<PrivateRoute><SendParcel></SendParcel></PrivateRoute>,
+        loader: ()=> fetch("/assets/ServiceCenter.json")
       }
     ]
   },

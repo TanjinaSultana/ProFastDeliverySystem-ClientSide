@@ -32,7 +32,7 @@ const showCases = [
 const ShowCase = () => {
   return (
     <div data-aos="fade-right" data-aos-delay="500" className="flex flex-col max-w-4xl mx-auto gap-6 py-12">
-        <div class="border-t-1 border-dashed border-[#03464D]  mb-16"></div>
+        <div className="border-t-1 border-dashed border-[#03464D]  mb-16"></div>
       {showCases.map((item, index) => (
         <ShowCaseCard
           key={index}
@@ -41,7 +41,7 @@ const ShowCase = () => {
           description={item.description}
         />
       ))}
-      <div class="border-t-1 border-dashed border-[#03464D] mt-12 mb-16"></div>
+      <div className="border-t-1 border-dashed border-[#03464D] mt-12 mb-16"></div>
     </div>
   );
 };
